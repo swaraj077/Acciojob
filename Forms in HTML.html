@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form> <!--action & method attributes-->
+        <!--form controls-->
+        <h2>input tag</h2>
+        <label for = "user_name">name of candidate</label>
+        <input id = "user_name" name = "user_name" type = "text" placeholder = "Swaraj Patil" required>
+        number
+        <input name = "user_number" type = "number" placeholder = "+918456975860" required>
+        password
+        <input name = "user_password" type = "password" placeholder = "********" required>
+        Email
+        <input name = "user_email" type = "email" placeholder = "swarajpatil@gmail.com" required>
+        date
+        <input name = "date" type = "date" required> <br><br>
+        file
+        <input name = "file" type = "file" required>
+        color
+        <input name = "color" type = "color" >
+
+        range
+        <input name = "range" min = "10" max = "100" type = "range" > 
+        <!--what type of data goes in backend for range
+        is it possible without giving min and max values?-->
+
+        reset
+        <input name = "reset" type = "reset" >
+        submit
+        <input name = "submit" type = "submit" >
+        <!--does reset and submit button requires name attribute? 
+        How it knows to reset all when we peress reset button or submit
+        when we pressed submit button?-->
+        <br><br>
+
+        Radio<br>
+        male
+        <input name = "gender" value ="male" type = "radio" >
+        female
+        <input name = "gender" value = "female" type = "radio" >
+        
+        <br><br>
+        Checkbox <br>
+        select price range <br>
+        <!--how different price ranges will be saved in the price range?-->
+
+        <input name = "price range" value = "100 to 999" type = "checkbox" required>
+        100 to 999 <br>
+        <input name = "price range" value = "1000 to 9999" type = "checkbox" required>
+        1000 to 9999 <br>
+        <input name = "price range" value = "10000 to 99999" type = "checkbox" required>
+        10000 to 99999
+
+        <br><br>
+        favouite car
+        <select name = "favouite car" > 
+            <!-- you can use "muliple" attribute inside select tag for selecting multiple options-->
+            <option value = "BMW">BMW</option>
+            <option value = "Audi">Audi</option>
+            <option value = "Cresta">Cresta</option>
+        </select>
+        <br><br>
+
+      <textarea name = "feedback" rows = "4" cols = "20" required></textarea>
+      <button type="reset">Reset button</button>
+
+
+    
+
+    </form>
+</body>
+</html>

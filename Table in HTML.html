@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <h2>15/12/2023</h2>
+    <h3>Table</h3>
+
+    <!--
+        Create a table 
+            Sr no. | product name   | Price   | Discount | Discounted Price
+            1      |samung M31      |20,000   |20%       |16,000
+            2      |realme 9        |15,000   |10%       |13,500
+            3      |Iphone 15       |1,00,000 |15%       |85,000
+            4      |One plus mclren |70,000   |18%       |57,400
+            Total                                        |1,71,900
+            Final Amount after 10% Discount              |1,54,710
+            for your product
+                                             
+
+    -->
+        <h3>Non-Semantic Table</h3>
+        <table Border = "1">
+            <Caption>Purchase Bill</Caption>
+        
+            <!-- Header row -->
+            <tr>
+                <th>Sr no.</th> 
+                <th>Product name</th>
+                <th>Price</th>
+                <th>Discount</th>
+                <th>Discounted Price</th>
+            </tr>
+
+            <!-- First Row -->
+            <tr>
+                <td>1</td>
+                <td>samung M31 </td>
+                <td>20,000 </td>
+                <td>20% </td>
+                <td>16,000</td>
+            </tr>
+
+            <!--Second Row-->
+            <tr>
+                <td>2</td>
+                <td>realme 9 </td>
+                <td>15,000 </td>
+                <td>10% </td>
+                <td>13,500</td>
+            </tr>
+
+            <!-- Third Row -->
+            <tr>
+                <td>3</td>
+                <td>Iphone 15</td>
+                <td>1,00,000</td>
+                <td>15% </td>
+                <td>85,000</td>
+            </tr>
+
+            <!-- Fourth row -->
+            <tr>
+                <td>4</td>
+                <td>One plus mclaren</td>
+                <td>70,000 </td>
+                <td>18% </td>
+                <td>57,400</td>
+            </tr>
+
+            <!-- Total row -->
+            <tr>
+                <td colspan = "4">Total</td>
+                <td>1,71,900</td>
+            </tr>
+
+            <!-- Final Amount -->
+            <tr>
+                <td colspan = "4" > Final Amount after 10% Discount<br>
+                                    for your product</td>
+                <td>1,54,700</td>   
+            </tr>
+        </table>
+
+<br><br>
+
+<h2>17-12-2023</h2>
+        <!--Second table-->
+        <h3>Semantic table</h3></h>
+        <table border = "1">
+            <caption>Purchase bill editing trial</caption>
+            <thead>
+                <tr>
+                    <th>Sr No.</th>
+                    <th>Product Name</th>
+                    <th>Product price</th>
+                    <th>Discount</th>
+                    <th>Discounted Price</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Iphone</td>
+                    <td>70,000</td>
+                    <td>20%</td>
+                    <td>56,000</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>samsung m31</td>
+                    <td colspan = "2" rowspan = "2">75,000</td>
+                    <td rowspan = "2">58,000</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>vivo y21</td>
+                    <!-- <td>35,000</td>
+                    <td>12%</td>
+                    <td>31,000</td> -->
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan = "4">Total</td>
+                    <td>1,42,000</td>
+                </tr>
+            </tfoot>
+
+        </table>
+        <br>
+
+
+        <h3>Table Scope</h3>
+        <table border = "1">
+            <caption>
+              Alien football stars
+            </caption>
+            <tr>
+              <th scope="col">Player</th>
+              <th scope="col">Gloobles</th>
+              <th scope="col">Za'taak</th>
+            </tr>
+            <tr>
+              <th scope="row">TR-7</th>
+              <td>7</td>
+              <td>4,569</td>
+            </tr>
+            <tr>
+              <th scope="row">Khiresh Odo</th>
+              <td>7</td>
+              <td>7,223</td>
+            </tr>
+            <tr>
+              <th scope="row">Mia Oolong</th>
+              <td>9</td>
+              <td>6,219</td>
+            </tr>
+          </table>
+
+    
+</body>
+</html>
